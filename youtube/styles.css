@@ -1,0 +1,37 @@
+body {
+    font-family: "Roboto", sans-serif;
+    background-color: #f9f9f9;
+    margin: 0;
+    padding: 0;
+}
+
+.apps {
+    width: 22px;
+    height: 22px;
+}
+
+nav {
+    background-color: #ffffff;
+    height: 50px;
+    margin: 0;
+    padding: 0;
+}
+
+li {
+    display: inline-block;
+}
+
+section {
+    text-align: center;
+    float: left;    
+}
+
+aside {    
+    float: right;    
+}
+
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+  display: block;
+}
