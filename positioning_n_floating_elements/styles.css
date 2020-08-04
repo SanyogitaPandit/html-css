@@ -1,0 +1,183 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;      
+}
+
+.topnav {
+    display: inline-flex; 
+    width: 100%;   
+    text-align: center;
+    justify-content: space-between;    
+    align-items: center;
+    padding: 0 20px;
+    border-bottom: 1px solid #e2e2e2;
+}
+
+.topnav :nth-child(1) {
+    cursor: pointer;
+}
+
+.topnav-left {    
+    display: flex;    
+    line-height: 19px;
+    font-size: 14.25px;
+    font-family: nyt-franklin,helvetica,arial,sans-serif;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 0.7px;
+    align-items: center;    
+}
+
+.topnav a {
+    text-decoration: none;
+    color: black;     
+    padding: 10px 4px;
+    white-space: nowrap;
+}
+
+.topnav-mid {
+	width: 195px;
+	height: 26px;
+	margin: 6px auto 0;
+}
+
+.topnav-right {
+    display: flex;
+    flex-wrap: nowrap;
+}
+
+.topnav-right button{
+    border-radius: 3px;
+    cursor: pointer;
+    font-family: nyt-franklin, helvetica, arial, sans-serif;
+    transition: all 0.6s ease 0s;
+    white-space: nowrap;
+    vertical-align: middle;
+    background-color: rgb(86, 123, 149);
+    border: 1px solid rgb(50, 104, 145);
+    color: rgb(255, 255, 255);
+    font-size: 11px;
+    line-height: 11px;
+    font-weight: 700;
+    letter-spacing: 0.05em;
+    padding: 11px 12px 8px;
+    text-transform: uppercase;
+}
+
+.topnav-left svg, .topnav-right svg {    
+    height: 16px;  
+    min-width: 16px;
+    margin-right: 22px;
+}
+
+.rusr {
+    display: none;
+}
+
+.footer-acc {
+    width: 100%;
+    position: absolute;
+    bottom: 0;
+    display: flex;
+    height: 55px;
+    padding: 0 20px;
+    border-top: 1px solid rgb(55, 55, 55);
+    font-size: 15px;
+    line-height: 17px;
+    opacity: 1;
+    animation: 0.5s ease 0s 1 normal none running animation-mhvv8m;
+    font-family: nyt-franklin, helvetica, arial, sans-serif;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+}
+
+.footer-acc svg {
+    transition: transform 500ms ease 0s;
+    transform: rotate(-90deg);
+    margin-left: 30px;
+}
+
+.exp {
+    font-family: inherit; 
+    display: flex;  
+    position: absolute;
+    right: 8%;    
+}
+
+.exp button {
+    border: none;
+    background-color: white;
+    cursor: pointer;
+}
+
+.ftxt {
+    display: flex;    
+    flex-wrap: wrap;
+    overflow-wrap: break-word;
+    padding: 0 20px;
+}
+
+@media screen and (max-width: 800px) {
+    .topnav {
+        height: 48px;
+    }
+
+    .footer-acc {
+        justify-content: space-between;
+    }
+
+    .exp {
+        justify-self: flex-end;        
+        position: relative;   
+    }
+    
+    .exp button {
+        display: none;
+    }
+
+    .links {
+        display: none;
+    }
+
+    .rusr {
+        display: unset;
+    }
+
+    .topnav-right a {
+        text-decoration: none;          
+        padding: 0;
+        white-space: nowrap;
+        font-size: 0px;        
+        border-left: 1px solid rgb(50, 140, 145);        
+    }
+
+    .rlinks {
+        position: absolute;
+        top: 50px;
+        right: 20px;
+        display: inline-flex;
+        align-items: center;        
+    }
+
+    .rlinks a:first-child {
+        border: none;
+    }
+
+    .rlinks button {         
+        cursor: pointer;
+        font-family: nyt-franklin, helvetica, arial, sans-serif;
+        transition: all 0.6s ease 0s;
+        white-space: nowrap;
+        vertical-align: middle;
+        background-color: white;
+        border: none;
+        color: rgb(50, 104, 145);
+        font-size: 9px;
+        line-height: 1px;
+        font-weight: normal;
+        letter-spacing: 0;        
+        text-transform: uppercase;
+    }
+}
