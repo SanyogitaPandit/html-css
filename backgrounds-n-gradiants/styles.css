@@ -9,21 +9,112 @@
 
 body {
     font: 12px/18px "Lucida Grande", "Lucida Sans Unicode", Helvetica, Arial, Verdana, sans-serif;
+    color: #333;
+}
+
+.topnav {
+    min-width: 1100px;
+    width: 100%;
+    position: absolute;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    top: 7em;    
+}
+
+.topnav ul {     
+    background: #707070;    
+    background: linear-gradient(to top, #8b8989 0%, #6d6d6d 50%, #585858 10%, #777777 100%);
+    border-radius: 0.3rem;
+    border-bottom: 1px solid #666;
+    list-style: none outside;
+    box-shadow: rgba(0, 0, 0, 0.3) 0 1px 2px;    	
+	width: 980px;	
+	height: 36px;
+}
+
+.topnav .flexul li {        
+    flex: 1;
+    height: 100%;
+    font-size: 12px;
+    border-left: 1px solid #666;
+    padding: 0px;
+    padding: 10px;    
+    text-align: center;
+}
+
+.nav-logo {
+    margin-top: 3px;
+	background-image: url(http://images.apple.com/global/nav/images/globalnav_text.svg);
+	background-position: 50% 0;
+    display: block;
+    border: none !important;    
+}
+
+.nav-search {
+    padding-top: 7px !important;
+}
+
+.nav-search-input {
+    position: relative;
+	width: 100px;
+    border-width: 1px;    
+    border-color: #767676;
+    border-top: 2px solid #333;
+    border-bottom: 1px solid #999;
+	border-radius: 15px;    
+    font-size: 12px;
+	background: rgba(180, 180, 180, 0.3);
+    transition: all 0.4s;    
+}
+
+.magnifyer {
+	position: absolute;
+	width: 15px;
+	height: 14px;
+	cursor: default;
+}
+
+.magnifyer svg {
+	width: 100%;
+	height: 100%;
+	position: absolute;
+	bottom: 15px;
+	left: 5px;
+}
+
+.magnifyer-icon {
+	fill: white;
+	transition: 0.01s;
+	box-shadow: #767676;
+}
+
+.topnav a {
+    color: white;    
 }
 
 .gridd {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr 1fr;
+    justify-content: center;
+    align-items: center; 
+    margin: auto;
+    min-width: 1000px;
 }
 
 .gridd img {
     width: 100%;
 }
 
-.fig1 {
-    height: 500px;
+.fig1 {    
     grid-column: 1 / -1;
     background: url(https://web.archive.org/web/20140301004302im_/http://images.apple.com/v/home/as/images/your_verse_hero.jpg) 50% 100% no-repeat;
+    background-attachment: local;
+    display: grid;
+    align-content: center;
+    justify-items: center;
+    padding: 12% 0;
+    row-gap: 20px;
 }
 
 footer {
