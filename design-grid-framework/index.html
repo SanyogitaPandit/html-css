@@ -1,0 +1,278 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="reset.css">
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,600;0,700;0,800;1,300;1,400;1,600;1,700;1,800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
+    <link rel="stylesheet" href="grid_framework.css">
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+    <div class="container">
+        <header class="header">
+            <nav class="top-nav max-w">
+                <div class="nav-title">
+                    <img class="logo-img" height="70px" src="images/odin-logo-2d729f16279e9fc3b58ce847eacf07f883bdfc95eb23bb5064ed59d36ef551d6.svg">
+                    <a class="logo-text">The Odin Project</a>
+                </div>
+                <div class="nav-collapse">
+                    <a href="">My Courses</a>
+                    <a class="drop-down" href="#" id="navbarDropdown" role="button" aria-haspopup="true" aria-expanded="false">
+                        Community
+                    </a>
+                    <button class="user-button" href="">
+                        <img class="logo-img" height="30px" src="images/odin-logo-2d729f16279e9fc3b58ce847eacf07f883bdfc95eb23bb5064ed59d36ef551d6.svg" alt="User Button">
+                    </button>
+                </div>
+                <div class="nav-toggle" style="font-size: 2em; color: #6abfc3;">
+                    <i class="fas fa-bars" aria-hidden="true"></i>
+                </div>
+            </nav>
+            <div class="row">
+                <div class="col12">
+                    <a class="course-card-header__link" href="/courses/html-and-css">
+                        <div class="course-badge progress-circle " data-progress="96">
+                            <div class="progress-circle__inner">
+                                <img alt="HTML and CSS badge" class="progress-circle__image" src="images/badge-html-borderless-e5983c8732a3d30daec2894ccc2a69564d0585e8dcbdc534e762b9e001c74a61.svg">
+                                <p class="bold progress-circle__content">96%</p>
+                                <p class="progress-circle__content">COMPLETE</p>
+                            </div>
+                        </div>
+                    </a>
+                    <div class="course-title">
+                        <h1>HTML and CSS</h1>
+                    </div>
+                    <a href="" class="project-name">Project: Design Your Own Grid-Based Framework</a>
+                </div>
+            </div>
+        </header>
+        <div class="left" style="justify-self: center; align-items: flex-start;">
+            <div class="lesson-navigation">
+                <div class="lesson-navigation__item">
+                    <div class="lesson-navigation__circle active"></div>
+                    <div class="lesson-navigation__title">
+                        <a class="lesson-navigation__link grey active" href="#introduction" data-turbolinks="false">
+                            Introduction</a>
+                    </div>
+                </div>
+                <div class="lesson-navigation__item">
+                    <div class="lesson-navigation__circle"></div>
+                    <div class="lesson-navigation__title">
+                        <a class="lesson-navigation__link grey" href="#assignment" data-turbolinks="false">
+                            Assignment</a>
+                    </div>
+                </div>
+                <div class="lesson-navigation__item">
+                    <div class="lesson-navigation__circle"></div>
+                    <div class="lesson-navigation__title"><a class="lesson-navigation__link grey" href="#additional-resources" data-turbolinks="false">Additional Resources</a></div>
+                </div>
+            </div>
+        </div>
+
+        <section class="main">
+            <article>
+                <h2>Introduction</h2>
+                <p>In this final project, you’ll get to take everything you’ve learned and use it to build your own simple grid-based framework. As with the other final projects, we’ll keep it relatively open-ended to give you a chance to exercise your creativity
+                    and problem-solving skills. It will be a great project to show off to potential employers as well.</p>
+                <p>Once you’re done setting up your framework, you will use it to clone any website you like. If you’re out of ideas, try cloning The Odin Project!</p>
+            </article>
+            <article class="lesson-content">
+                <h2>Assignment</h2>
+                <p>You’ll be creating your own grid-based framework.</p>
+                <div class="lesson-content__panel">
+                    <ol>
+                        <li>Follow the instructions atop the <a href="/courses/web-development-101/lessons/html-css">Google Homepage project</a> to set up a GitHub repository for this project (of course you’ll need to change the title).</li>
+                        <li>Create a new CSS document.</li>
+                        <li>Think about the major elements that are required of a framework. This includes a CSS reset, a fixed number of grids separated by “gutters”, a way to make new rows, and default values for the font properties of elements.</li>
+                        <li>Write the CSS necessary to create a basic 12-column grid framework. Check out the <a href="http://960.gs" target="_blank" rel="noreferrer">960 Grid System documentation</a> for a look at how they do it. The complexity is up to
+                            you – there’s no need to go too crazy with details (you’re not trying to rebuild Bootstrap).</li>
+                        <li>Push your framework to GitHub.</li>
+                    </ol>
+
+                    <h4 id="applying-the-framework">Applying the Framework</h4>
+
+                    <ol>
+                        <li>Create a new HTML document and a new GitHub repository.</li>
+                        <li>Identify the webpage you’d like to clone and break it down into its major elements like we have in the previous projects.</li>
+                        <li>Add your framework to your project.</li>
+                        <li>Use your framework to lay out the structure of the page.</li>
+                        <li>Fill in the necessary details/images etc.</li>
+                        <li>Push your solution to GitHub.</li>
+                        <li>Have a frosty beverage, you’re done with the HTML/CSS projects!</li>
+                    </ol>
+                </div>
+            </article>
+            <article>
+                <h2>Student Solutions</h2>
+                <p>Submit a link below to <a href="https://github.com/TheOdinProject/curriculum/blob/master/html_css/project_css_frameworks.md" target="_blank" rel="noreferrer">this file</a> on The Odin Project’s curriculum GitHub repo with your files in
+                    it by using a pull request. See the section on <a href="http://github.com/TheOdinProject/curriculum/blob/master/contributing.md" target="_blank" rel="noreferrer">Contributing</a> for how.</p>
+                <details>
+                    <summary> Show Student Solutions </summary>
+
+                    <ul>
+                        <li>Add your solution below this line!</li>
+                        <li><a href="https://github.com/run-after/framework-chase" target="_blank" rel="noreferrer">Run After’s Solution</a> - <a href="https://run-after.github.io/framework-chase/" target="_blank" rel="noreferrer">View in Browser</a></li>
+                        <li><a href="https://github.com/Lucas-Bide/odin-odin" target="_blank" rel="noreferrer">Lucas Bide’s Solution</a> - <a href="https://lucas-bide.github.io/odin-odin/" target="_blank" rel="noreferrer">View in Browser</a></li>
+                        <li><a href="https://github.com/Haroonabdulrazaq/Devsummit" target="_blank" rel="noreferrer">HaroonAbdulrazaq’s solution - Devsummit</a> - <a href="https://haroonabdulrazaq.github.io/Devsummit/" target="_blank" rel="noreferrer">View in Browser</a></li>
+                        <li><a href="https://github.com/rarysson/grid-lib" target="_blank" rel="noreferrer">Rarysson’s solution - Grid Lib Framework</a> - <a href="https://github.com/rarysson/5by5-clone" target="_blank" rel="noreferrer">5by5 Site Clone</a>                            - <a href="https://rarysson.github.io/5by5-clone/" target="_blank" rel="noreferrer">View in Browser</a></li>
+                        <li><a href="https://github.com/julio22b/my-CSS-framework" target="_blank" rel="noreferrer">Julio’s solution - Framework</a> - <a href="https://github.com/julio22b/letterboxd-home" target="_blank" rel="noreferrer">Letterboxd clone</a>                            - <a href="https://julio22b.github.io/letterboxd-home/" target="_blank" rel="noreferrer">View in Browser</a></li>
+                        <li><a href="https://github.com/igorashs/gridlay" target="_blank" rel="noreferrer">Igorashs’s Solution - Framework</a> - <a href="https://github.com/igorashs/the-odin-project-page" target="_blank" rel="noreferrer">The Odin Project Clone</a>                            - <a href="https://igorashs.github.io/the-odin-project-page/" target="_blank" rel="noreferrer">View in browser</a></li>
+                        <li><a href="https://github.com/fffear/my_grid_framework" target="_blank" rel="noreferrer">Kevin Vuong’s Solution</a> - <a href="https://github.com/fffear/the_odin_project_home_page_clone" target="_blank" rel="noreferrer">The Odin Project Clone</a>                            - <a href="https://fffear.github.io/the_odin_project_home_page_clone/" target="_blank" rel="noreferrer">View in browser</a></li>
+                        <li><a href="https://github.com/eduardoreisalvarenga/CSS_Framework" target="_blank" rel="noreferrer">David Auza’s and Eduardo Reis’s Solution</a> - <a href="https://rawcdn.githack.com/eduardoreisalvarenga/CSS_Framework/5aa808211fb83ef5e0715770a5820bf9cfa1ff48/index.html"
+                                target="_blank" rel="noreferrer">View in Browser</a></li>
+                        <li><a href="https://github.com/ARaut9/css_framework" target="_blank" rel="noreferrer">ARaut9’s solution - Framework</a> - <a href="https://araut9.github.io/css_framework/test.html" target="_blank" rel="noreferrer">View in browser</a></li>
+                        <li><a href="https://github.com/ARaut9/itunes_clone" target="_blank" rel="noreferrer">ARaut9’s solution - Example Site</a> - <a href="https://araut9.github.io/itunes_clone/" target="_blank" rel="noreferrer">View in browser</a></li>
+                        <li><a href="https://github.com/N00bG1rl/framework" target="_blank" rel="noreferrer">N00bG1rl’s solution</a> - <a href="https://n00bg1rl.github.io/framework/" target="_blank" rel="noreferrer">View in browser</a></li>
+                        <li><a href="https://github.com/Javier-Machin/cloud9-clone" target="_blank" rel="noreferrer">Javier Machin’s solution</a> - <a href="https://javier-machin.github.io/cloud9-clone/" target="_blank" rel="noreferrer">View in Browser</a></li>
+                        <li><a href="https://github.com/nmacawile/css-framework" target="_blank" rel="noreferrer">nmac’s solution</a> - <a href="https://htmlpreview.github.io/?https://github.com/nmacawile/css-framework/blob/master/index.html" target="_blank"
+                                rel="noreferrer">View</a></li>
+                        <li><a href="https://github.com/SarfrazAnjum/TOP_Design-Your-Own-Grid-Based-Framework" target="_blank" rel="noreferrer">SarfrazAnjum’s solution</a> - <a href="https://sarfrazanjum.github.io/TOP_Design-Your-Own-Grid-Based-Framework/"
+                                target="_blank" rel="noreferrer">View in Browser</a></li>
+                        <li><a href="https://github.com/harrika/mp3juices" target="_blank" rel="noreferrer">Henry Kirya’s solution</a> - <a href="https://harrika.github.io/mp3juices/" target="_blank" rel="noreferrer">View in Browser</a></li>
+                        <li><a href="https://github.com/theghall/odin-framework" target="_blank" rel="noreferrer">theghall’s solution</a> - <a href="https://theghall.github.io/odin-framework/example/index.html" target="_blank" rel="noreferrer">View in Browser</a></li>
+                        <li><a href="https://github.com/JonathanYiv/flex-grid" target="_blank" rel="noreferrer">Jonathan Yiv’s solution</a> - <a href="https://jonathanyiv.github.io/flex-grid/sample/index.html" target="_blank" rel="noreferrer">Test website</a></li>
+                        <li><a href="https://github.com/jmooree30/css-grid-framework" target="_blank" rel="noreferrer">Jmooree’s solution</a> - <a href="https://jmooree30.github.io/css-grid-framework/" target="_blank" rel="noreferrer">Test website</a></li>
+                        <li><a href="https://github.com/afuh/sasso" target="_blank" rel="noreferrer">Axel’s solution - Sass Framework</a> - <a href="https://afuh.github.io/sass-framework/" target="_blank" rel="noreferrer">Test website</a></li>
+                        <li><a href="https://github.com/ArturJanik/Stellage" target="_blank" rel="noreferrer">Artur Janik’s solution - Framework</a> - <a href="https://github.com/ArturJanik/ProjectInteria" target="_blank" rel="noreferrer">Solution - website</a>                            - <a href="https://htmlpreview.github.io/?https://github.com/ArturJanik/ProjectInteria/blob/master/index.html" target="_blank" rel="noreferrer">View desktop version in browser</a> - <a href="https://htmlpreview.github.io/?https://github.com/ArturJanik/ProjectInteria/blob/master/mindex.html"
+                                target="_blank" rel="noreferrer">View mobile version in browser</a></li>
+                        <li><a href="https://github.com/AtActionPark/odin_grid_framework" target="_blank" rel="noreferrer">AtActionPark’s solution - Framework</a> - <a href="https://github.com/AtActionPark/odin_grid_framework_example" target="_blank" rel="noreferrer">Example Site</a>                            - <a href="http://htmlpreview.github.io/?https://github.com/AtActionPark/odin_grid_framework_example/blob/master/main.html" target="_blank" rel="noreferrer">HTML Preview</a></li>
+                        <li><a href="https://github.com/migueloherrera/estilos" target="_blank" rel="noreferrer">Miguel Herrera’s solution - Framework</a> - <a href="https://github.com/migueloherrera/ctop" target="_blank" rel="noreferrer">The Odin Project Clone</a>                            - <a href="http://htmlpreview.github.io/?https://github.com/migueloherrera/ctop/blob/master/index.html" target="_blank" rel="noreferrer">View in browser</a></li>
+                        <li><a href="https://github.com/daunenok/framework-edx" target="_blank" rel="noreferrer">Daunenok’s solution</a> - <a href="https://daunenok.github.io/framework-edx/" target="_blank" rel="noreferrer">View in browser</a></li>
+                        <li><a href="https://github.com/davidchappy/css-framework" target="_blank" rel="noreferrer">David Chapman’s solution (minimal)</a> - <a href="https://davidchappy.github.io/css-framework/" target="_blank" rel="noreferrer">View in browser</a></li>
+                        <li><a href="https://github.com/bethrath/12-column-grid" target="_blank" rel="noreferrer">Beth Rathbone’s solution- Framework</a> - <a href="http://htmlpreview.github.io/?https://github.com/bethrath/lisa-eldridge/blob/master/index.html"
+                                target="_blank" rel="noreferrer">Example Site</a></li>
+                        <li><a href="https://github.com/CouchofTomato/css-framework" target="_blank" rel="noreferrer">Austin’s solution</a> - <a href="https://couchoftomato.github.io/css-framework/" target="_blank" rel="noreferrer">Example Site</a></li>
+                        <li><a href="https://github.com/defitjo/grid-based-framework" target="_blank" rel="noreferrer">Devon’s solution</a> - <a href="https://defitjo.github.io/grid-based-framework/" target="_blank" rel="noreferrer">Example Site</a></li>
+                        <li><a href="https://github.com/ncud4bloc/My_Frame/" target="_blank" rel="noreferrer">Neil Cudden’s solution</a> - <a href="https://ncud4bloc.github.io/My_Frame/HTML/index.html" target="_blank" rel="noreferrer">View in browser</a></li>
+                        <li><a href="https://github.com/hosghf/css-grid-framework" target="_blank" rel="noreferrer">husein ghafari’s solution</a> - <a href="https://htmlpreview.github.io/?https://github.com/hosghf/final-prj/blob/master/index.html" target="_blank"
+                                rel="noreferrer">Example Site</a></li>
+                        <li><a href="https://github.com/fcarlosdev/grid-framework" target="_blank" rel="noreferrer">Francisco Carlos’s - Scaffold Framework</a> - <a href="https://github.com/fcarlosdev/thoughco" target="_blank" rel="noreferrer">Example Site</a>                            - <a href="https://fcarlosdev.github.io/thoughco/" target="_blank" rel="noreferrer">View in browser</a></li>
+                        <li><a href="https://github.com/thisisMAhmad/pure-grid" target="_blank" rel="noreferrer">Muhammad Ahmad’s CSS Framework - Pure Grid</a> - <a href="https://github.com/thisisMAhmad/the-odin-project" target="_blank" rel="noreferrer">Final Project Git Page</a>                            - <a href="https://thisismahmad.github.io/the-odin-project/" target="_blank" rel="noreferrer">View site in browser</a></li>
+                        <li><a href="https://github.com/aznafro/flik" target="_blank" rel="noreferrer">aznafro’s CSS Framework - Flik</a> - <a href="https://github.com/aznafro/natgeo" target="_blank" rel="noreferrer">Final Project Git Page</a> - <a href="https://aznafro.github.io/natgeo/"
+                                target="_blank" rel="noreferrer">View site in browser</a></li>
+                        <li><a href="https://github.com/Oluwadamilareolusakin/sphinx" target="_blank" rel="noreferrer">Oluwadamilare Olusakin’s CSS Framework - Sphinx</a></li>
+                        <li><a href="https://github.com/carloshdelreal/caby_cssframework" target="_blank" rel="noreferrer">Carlos Del Real’s and Gabriela Cruz’s Solutions</a> - <a href="https://carloshdelreal.github.io/caby_cssframework/" target="_blank"
+                                rel="noreferrer">Example Site</a></li>
+                        <li><a href="https://github.com/lco1220/grid_based_framework" target="_blank" rel="noreferrer">Ohlie’s Solutions</a> - <a href="https://lco1220.github.io/grid_based_framework/" target="_blank" rel="noreferrer">Example Site</a></li>
+                        <li><a href="https://github.com/themetar/css-framework" target="_blank" rel="noreferrer">themetar’s solution</a> - <a href="https://themetar.github.io/odin-project-page-clone/" target="_blank" rel="noreferrer">Example site</a></li>
+                        <li><a href="https://github.com/ranmaru22/griddy" target="_blank" rel="noreferrer">ranmaru22’s Solution: griddy</a> - <a href="https://ranmaru22.github.io/griddy/" target="_blank" rel="noreferrer">Example Site</a></li>
+                        <li><a href="https://github.com/barrysweeney/custom-css-grid-framework" target="_blank" rel="noreferrer">barrysweeney’s Solution</a> - <a href="https://github.com/barrysweeney/custom-grid-site" target="_blank" rel="noreferrer">Example Site</a>                            - <a href="https://barrysweeney.github.io/custom-grid-site/" target="_blank" rel="noreferrer">View in Browser</a></li>
+                        <li><a href="https://github.com/Timework/framework" target="_blank" rel="noreferrer">Timework’s - Framework</a> - <a href="https://github.com/Timework/odin-clone" target="_blank" rel="noreferrer">The Odin Project Clone</a> - <a href="https://timework.github.io/odin-clone/"
+                                target="_blank" rel="noreferrer">View in browser</a></li>
+                    </ul>
+                </details>
+            </article>
+            <article class="scrollspy">
+                <h2>Additional Resources</h2>
+                <p>
+                    This section contains helpful links to other content. It isn’t required, so consider it supplemental for if you need to dive deeper into something.
+                </p>
+                <ul>
+                    <li>Add some!</li>
+                </ul>
+            </article>
+        </section>
+
+        <footer class="footer">
+            <div class="lesson-functions">
+                <div class="card-main">
+                    <div class="row" style="gap: 1em;">
+                        <a title="Go back to 'HTML and CSS'" class="button button--secondary col4 lesson-button" href="/courses/html-and-css?ref=lnav">View Course</a>
+
+                        <a class=" col4 button button--primary  lesson-button" title="Mark lesson complete" data-disable-with="submitting" data-remote="true" rel="nofollow" data-method="post" href="/lessons/design-your-own-grid-based-framework/lesson_completions">
+                            <i class="lesson-button__icon far fa-check-circle" aria-hidden="true"></i>Complete
+                        </a>
+
+                        <a title="Move on to 'Conclusion'" class=" col4 button button--secondary  lesson-button" href="/courses/html-and-css/lessons/conclusion-html5-and-css3?ref=lnav">Next Lesson</a>
+
+                    </div>
+                </div>
+
+                <a target="_blank" rel="noreferrer noopener" class="lesson-functions__edit-lesson-link" href="https://github.com/TheOdinProject/curriculum/edit/master/html_css/project_css_frameworks.md">
+                    <span class="fab fa-github mr-1"></span>
+                    <span> Improve this lesson on GitHub</span>
+                </a>
+                <div class="bottom-cta">
+                    <p class="bottom-cta__heading">Have a question?</p>
+
+                    <p class="bottom-cta__sub-heading">Chat with our friendly Odin community in our Discord chatrooms!</p>
+                    <a class="button button--secondary" target="_blank" rel="noreferrer" href="https://discord.gg/V75WSQG">Open Discord</a>
+                </div>
+
+
+                <div class="card-main advert">
+                    <div class="advert__header">
+                        <h2 class="advert__pitch">Are you interested in accelerating your web development learning experience?</h2>
+                        <a href="https://www.thinkful.com/?utm_source=odin&amp;utm_medium=cpc&amp;utm_campaign=odin-homepage&amp;utm_content=web-dev-3-icons" class="button button--primary">Get started</a>
+                    </div>
+                    <div class="row">
+                        <a href="https://www.thinkful.com/?utm_source=odin&amp;utm_medium=cpc&amp;utm_campaign=odin-homepage&amp;utm_content=tf-logo" alt="Thinkful" class="col3 advert__brand-anchor">
+                            <div class="advert__brand">
+                                <h2 class="advert__brand-name">Thinkful</h2>
+                            </div>
+                        </a>
+                        <ul class="advert__icons-group col9">
+                            <li class="advert__icons-group-item">
+                                <p class="advert__icon-text">5-6 months</p>
+                            </li>
+
+                            <li class="advert__icons-group-item">
+                                <p class="advert__icon-text">Job Guarantee</p>
+                            </li>
+
+                            <li class="advert__icons-group-item">
+                                <p class="advert__icon-text">1-on-1 Mentorship</p>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <footer class="top-nav">
+                <div class="nav-title">
+                    <img height="70px" class="logo-img" src="images/odin-logo-2d729f16279e9fc3b58ce847eacf07f883bdfc95eb23bb5064ed59d36ef551d6.svg">
+                    <a class="logo-text"> The Odin Project </a>
+                </div>
+                <div class="">
+                    <a href="https://github.com/TheOdinProject"><span aria-label="github" class="accent fab fa-github"></span></a>
+                    <a href="https://discord.gg/V75WSQG"><span aria-label="discord chat" class="accent fab fa-discord"></span></a>
+                    <a href="https://www.facebook.com/theodinproject/"><span aria-label="facebook" class="accent fab fa-facebook"></span></a>
+                    <a href="https://twitter.com/TheOdinProject"><span aria-label="twitter" class="accent fab fa-twitter"></span></a>
+                </div>
+                <div class="nav-collapse">
+                    <div class="footer-links-container">
+                        <a class="footer-link" href="/about">About</a>
+                        <a class="footer-link" href="/faq">FAQ</a>
+                        <a target="_blank" rel="noreferrer" class="footer-link" href="https://medium.com/the-odin-project">Blog</a>
+                    </div>
+                    <div class="footer-links-container">
+                        <a class="footer-link" href="/success_stories">Success Stories</a>
+                        <a class="footer-link" href="/contributing">Contribute</a>
+                        <a class="footer-link" href="/terms_of_use">Terms of Use</a>
+                    </div>
+                </div>
+            </footer>
+        </footer>
+    </div>
+    <div class="floating-dropdown">
+        <div class="floating-dropdown__item floating-dropdown--hidden-item text-center" data-toggle="tooltip" data-placement="left" title="" data-original-title="Chat">
+            <a target="_blank" rel="noreferrer" class="chat-floating-btn" href="https://discord.gg/V75WSQG">
+                <i class="fas fa-comment"></i>
+            </a>
+        </div>
+        <div class="floating-dropdown__item floating-dropdown--hidden-item text-center" data-toggle="tooltip" data-placement="left" title="" data-original-title="Forum">
+            <a target="_blank" rel="noreferrer" href="https://forum.theodinproject.com">
+                <i class="fas fa-users" aria-hidden="true"></i>
+            </a>
+        </div>
+        <div class="floating-dropdown__item main-floating-btn">
+            <i class="fas fa-comments" aria-hidden="true"></i>
+        </div>
+    </div>
+</body>
+
+</html>

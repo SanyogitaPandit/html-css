@@ -1,0 +1,161 @@
+.container {
+    display: grid;
+    grid-template-areas: "header header header header" "left main main right" "left main main right" "footer footer footer footer";
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    gap: 1em;
+    margin: auto;
+    padding: 1em;
+}
+
+.header,
+.main,
+.left,
+.right,
+.footer {
+    display: grid;
+    grid-auto-rows: auto;
+}
+
+.header {
+    grid-area: header;
+}
+
+.main {
+    grid-area: main;
+}
+
+.left {
+    grid-area: left;
+}
+
+.right {
+    grid-area: right;
+}
+
+.footer {
+    grid-area: footer;
+}
+
+.top-nav {
+    width: 100%;
+    margin: auto;
+    white-space: nowrap;
+}
+
+.top-nav,
+.nav-title,
+.nav-collapse {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.nav-toggle {
+    display: none;
+}
+
+.row {
+    display: grid;
+    grid-template-columns: repeat(12, 1fr);
+}
+
+.drop-down {
+    position: relative;
+    color: inherit;
+}
+
+.drop-down::after {
+    display: inline-block;
+    content: "";
+    border-left: 0.35em solid transparent;
+    border-top: 0.35em solid;
+    border-top-color: inherit;
+    border-right: 0.35em solid transparent;
+    border-bottom: 0.30em solid transparent;
+    margin: 0 0.35em;
+}
+
+.drop-down:hover {
+    cursor: pointer;
+}
+
+.col1,
+.col2,
+.col3,
+.col4,
+.col5,
+.col6,
+.col7,
+.col8,
+.col9,
+.col10,
+.col11,
+.col12 {
+    text-align: center;
+}
+
+.col2 {
+    grid-column: auto / span 2;
+}
+
+.col3 {
+    grid-column: auto / span 3;
+}
+
+.col4 {
+    grid-column: auto / span 4;
+}
+
+.col5 {
+    grid-column: auto / span 5;
+}
+
+.col6 {
+    grid-column: auto / span 6;
+}
+
+.col7 {
+    grid-column: auto / span 7;
+}
+
+.col8 {
+    grid-column: auto / span 8;
+}
+
+.col9 {
+    grid-column: auto / span 9;
+}
+
+.col10 {
+    grid-column: auto / span 10;
+}
+
+.col11 {
+    grid-column: auto / span 11;
+}
+
+.col12 {
+    grid-column: 1 / -1;
+}
+
+@media only screen and (max-width: 750px) {
+    /* For mobile phones: */
+    .container {
+        display: grid;
+        grid-template-areas: "header" "left" "main" "right" "footer";
+        grid-template-columns: 1fr;
+        margin: 0;
+    }
+    .top-nav {
+        margin: 0;
+    }
+    .nav-collapse {
+        display: none;
+    }
+    .nav-toggle {
+        display: flex;
+    }
+    .row {
+        grid-template-columns: 1fr;
+    }
+}

@@ -1,0 +1,461 @@
+/* Embed font required for the brand at the navbar */
+
+@font-face {
+    font-family: "Norse-bold";
+    src: url('fonts/norse/Norsebold.otf');
+}
+
+body {
+    font-family: "Open Sans", "Helvetica Neue", Helvetica, Arial, sans-serif;
+}
+
+a {
+    text-decoration: none;
+    color: #cc9543;
+}
+
+.logo-text {
+    font-family: Norse-bold;
+    font-size: 2em;
+    font-weight: bolder;
+    text-transform: uppercase;
+    letter-spacing: 0.4px;
+    display: inline-block;
+    padding-left: 0.5em;
+}
+
+.logo-img {
+    transition: all .05s ease-in-out;
+}
+
+.max-w {
+    padding: 0 10em;
+    margin-bottom: 4em;
+}
+
+.user-button {
+    background-color: transparent;
+    border: none;
+    border-left: 1px solid;
+    color: inherit;
+}
+
+.nav-collapse * {
+    color: rgba(74, 74, 74, 0.7);
+    text-decoration: none;
+    letter-spacing: 0.2px;
+    font-size: 1em;
+    font-weight: bold;
+    padding: 0 0.5em;
+}
+
+.main h2 {
+    color: rgba(74, 74, 74);
+    letter-spacing: 0.2px;
+    font-size: 1.5em;
+    font-weight: bold;
+    margin: 1em 0;
+}
+
+.main p {
+    margin-bottom: 30px;
+    line-height: 1.9;
+    color: #4a4a4a;
+    word-break: break-word;
+}
+
+.course-title {
+    display: block;
+    font-size: 2.5em;
+    color: #4a4a4a;
+    font-weight: 300;
+    padding: 0.75em;
+}
+
+.project-name {
+    font-size: 1.4em;
+    font-weight: bold;
+    padding-bottom: 2em;
+    display: block;
+}
+
+.course-badge {
+    box-shadow: 0 5px 16px 0 rgba(0, 0, 0, 0.1);
+    border-radius: 50%;
+    display: inline-block;
+}
+
+.progress-circle__content {
+    font-size: 0.8rem;
+    line-height: 1.3;
+    color: rgba(74, 74, 74, 0.3);
+}
+
+.progress-circle {
+    background-color: rgba(74, 74, 74, 0.3);
+    height: 110px;
+    position: relative;
+    width: 110px;
+}
+
+.progress-circle__inner {
+    color: rgba(74, 74, 74, 0.7);
+    text-align: center;
+    align-items: center;
+    background-color: #fff;
+    border-radius: 50%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    position: absolute;
+    left: 0.5rem;
+    right: 0.5rem;
+    top: 0.5rem;
+    bottom: 0.5rem;
+    transition: transform .2s ease;
+}
+
+.progress-circle__image {
+    background-color: #fff;
+    border-radius: 50%;
+    position: absolute;
+    top: 2px;
+    left: 2px;
+}
+
+.progress-circle[data-progress="96"]::after {
+    background-image: linear-gradient(75.6deg, #96B874 50%, transparent 50%, transparent), linear-gradient(270deg, #96B874 50%, #ddd 50%, #ddd);
+}
+
+.progress-circle::after {
+    background-color: #cc9543;
+    border-radius: 50%;
+    content: '';
+    display: inline-block;
+    height: 100%;
+    width: 100%;
+}
+
+.progress-circle--show-progress .progress-circle__image {
+    display: none
+}
+
+.progress-circle--show-progress:hover .progress-circle__image {
+    display: inline-block
+}
+
+.progress-circle--completed .progress-circle__image {
+    display: inline-block
+}
+
+.progress-circle--completed:hover .progress-circle__image {
+    display: none
+}
+
+.floating-dropdown {
+    bottom: 20px;
+    position: fixed;
+    z-index: 1000;
+    right: 20px;
+}
+
+.floating-dropdown .floating-dropdown__item.floating-dropdown--hidden-item {
+    margin: 0 0 -50px 0;
+    opacity: 0;
+    transition: margin 1s ease-out, opacity 0.5s;
+    padding: 0.5em;
+    margin-right: 0.6em;
+    margin-left: 0.6em;
+    z-index: 1;
+    position: relative;
+}
+
+.floating-dropdown .floating-dropdown__item {
+    background: #6abfc3;
+    border-radiusFmain: 50%;
+    box-shadow: 0 0 15px 2px rgba(0, 0, 0, 0.2);
+    padding: 1em;
+    cursor: pointer;
+}
+
+.floating-dropdown .floating-dropdown__item.main-floating-btn .fas.fa-comments {
+    color: #fff;
+    font-size: 2em;
+}
+
+.fa-comments::before {
+    content: "\f086";
+}
+
+.floating-dropdown .floating-dropdown__item.main-floating-btn {
+    position: relative;
+    z-index: 2;
+}
+
+.floating-dropdown .floating-dropdown__item:hover {
+    box-shadow: 0 0 15px 6px rgba(0, 0, 0, 0.2);
+}
+
+.lesson-navigation {
+    padding-bottom: 82px;
+    position: -webkit-sticky;
+    position: sticky;
+    top: 50px;
+}
+
+.lesson-navigation__item {
+    margin-bottom: 32px;
+    display: flex;
+    align-items: center;
+}
+
+.lesson-navigation__circle {
+    border-radius: 50%;
+    background: rgba(74, 74, 74, 0.7);
+    width: 16px;
+    height: 16px;
+}
+
+.lesson-navigation__circle.active {
+    background: #000;
+}
+
+.lesson-navigation__title {
+    color: rgba(74, 74, 74, 0.7);
+    display: inline-block;
+    flex: 1;
+    font-size: 13px;
+    letter-spacing: 0.2px;
+    margin-left: 10px;
+    text-transform: uppercase;
+}
+
+.lesson-navigation__link.active {
+    color: #000;
+    font-weight: bold;
+}
+
+.grey {
+    color: rgba(74, 74, 74, 0.7);
+}
+
+.main {
+    grid-column-end: -1;
+    padding: 0 10% 0 5%;
+}
+
+.lesson-content {
+    padding-bottom: 60px;
+}
+
+.lesson-content__panel {
+    background-color: #f3f3f3;
+    padding: 1.5em;
+    margin: 20px 0 50px 0;
+}
+
+.lesson-content ol {
+    padding-left: 1.25em;
+}
+
+.lesson-content ul,
+.lesson-content ol {
+    line-height: 1.9;
+}
+
+ol {
+    margin-top: 0;
+    margin-bottom: 1rem;
+    list-style: decimal;
+}
+
+ul {
+    list-style: disc;
+}
+
+.lesson-content li {
+    color: rgba(74, 74, 74, 0.7);
+    font-size: 1.125rem;
+}
+
+.lesson-content__panel li {
+    margin: 15px 0;
+    color: #4a4a4a;
+}
+
+.lesson-content__panel h4 {
+    margin-bottom: 10px;
+    font-weight: bold;
+    color: #4a4a4a;
+    font-size: 18px;
+    letter-spacing: 0.3px;
+}
+
+.lesson-functions {
+    padding: 70px 0;
+    background: #eee;
+    text-align: center;
+}
+
+.card-main {
+    box-shadow: 0 5px 16px 0 rgba(0, 0, 0, 0.1);
+    background-color: #fff;
+    padding: 40px 5%;
+    position: relative;
+    width: 80%;
+    margin: auto;
+    margin-bottom: 40px;
+}
+
+.lesson-button {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.button--primary {
+    background-color: #6abfc3;
+}
+
+.button--secondary {
+    background-color: #cc9543;
+}
+
+.button {
+    border-radius: 0.2em;
+    box-shadow: 0 0.05em 0.25em 0 rgba(0, 0, 0, 0.5);
+    color: #fff;
+    display: inline-block;
+    font-size: 1em;
+    font-weight: bold;
+    letter-spacing: 0.2px;
+    padding: 1rem 3.5rem;
+    text-align: center;
+    text-decoration: none;
+    cursor: pointer;
+    border: none;
+}
+
+.lesson-functions__edit-lesson-link {
+    color: #cc9543;
+    font-size: 1.125rem;
+}
+
+.bottom-cta {
+    font-weight: 100;
+    padding: 5em 2.5em;
+    text-align: center;
+}
+
+.bottom-cta__heading {
+    color: rgba(74, 74, 74, 0.7);
+    font-size: 2.2em;
+    line-height: 1.5em;
+    margin: 0 auto 1rem;
+    max-width: 25em;
+}
+
+.bottom-cta__sub-heading {
+    font-weight: normal;
+    margin-bottom: 2.5em;
+    color: rgba(74, 74, 74, 0.7);
+    font-size: 1.125rem;
+    letter-spacing: 0.2px;
+}
+
+.advert__header {
+    display: flex;
+    justify-content: space-between;
+    border-bottom: 2px solid rgba(0, 0, 0, 0.1);
+    align-items: center;
+    line-height: 1.5;
+    padding-bottom: 20px;
+    text-align: left;
+}
+
+.advert__pitch {
+    font-size: 1.5rem;
+    display: inline-block;
+    color: rgba(74, 74, 74, 0.7);
+    width: 70%;
+    letter-spacing: 0.3px;
+    line-height: 1.5;
+}
+
+.advert__body {
+    display: flex;
+    padding-top: 30px;
+    justify-content: space-between;
+}
+
+.advert__brand-anchor {
+    text-decoration: none;
+}
+
+.advert__brand {
+    display: flex;
+    align-items: center;
+}
+
+.advert__brand-name {
+    font-weight: bold;
+    font-size: 1.5em;
+    color: #11343d;
+    margin-bottom: 0;
+}
+
+.advert__logo {
+    height: 60px;
+    margin-right: 20px;
+}
+
+.advert__icons-group {
+    display: flex;
+    align-items: center;
+    list-style: none;
+}
+
+.advert__icons-group-item {
+    margin-left: 30px;
+}
+
+.advert__icon-text {
+    color: #4a4a4a;
+    font-weight: bold;
+}
+
+footer .footer-social {
+    display: flex;
+    flex: 1;
+    justify-content: center;
+    align-items: center;
+}
+
+@media only screen and (max-width: 950px) {
+    .logo-text {
+        font-size: 1.5em;
+    }
+}
+
+@media only screen and (max-width: 850px) {
+    .nav-title .logo-img {
+        height: 50px;
+    }
+}
+
+@media only screen and (max-width: 750px) {
+    .max-w {
+        padding: 0;
+    }
+    .toggle {
+        display: none !important;
+    }
+    .progress-circle {
+        height: 90px;
+        width: 90px
+    }
+    .progress-circle__image {
+        top: -8px;
+        left: -8px
+    }
+}
